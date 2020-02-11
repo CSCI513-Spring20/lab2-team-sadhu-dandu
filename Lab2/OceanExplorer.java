@@ -34,7 +34,7 @@ public class OceanExplorer extends Application {
             for (int y = 0; y < dimension; y++) {
                 Rectangle rect = new Rectangle(x*scale, y*scale, scale, scale);
                 rect.setStroke(Color.BLACK);
-                rect.setFill(Color.PALETURQUOISE);	//Filling the background
+                rect.setFill(Color.PALETURQUOISE);	
                 root.getChildren().add(rect);
             }
         }
@@ -54,7 +54,7 @@ public class OceanExplorer extends Application {
         root.getChildren().add(ShipImageView);
 
     }
-    private void startSailing() {	//Method to  start Sailing
+    private void startSailing() {	
         scene.setOnKeyPressed(new EventHandler<KeyEvent>(){
 
 
