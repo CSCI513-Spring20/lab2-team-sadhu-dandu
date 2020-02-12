@@ -11,10 +11,11 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.scene.input.KeyEvent;
 
-
+//OceanExplorer class extends Application
 public class OceanExplorer extends Application {
     final int dimension = 10;
     final int scale = 50;
+//     Instantiating the OceanMap object
     OceanMap map = new OceanMap();
     AnchorPane root ;
     Scene scene;
@@ -45,6 +46,8 @@ public class OceanExplorer extends Application {
         startSailing();
 
     }
+    
+//     Method loadshipimage with the coordinates of the image
     public void loadShipImage() throws Exception{
         ShipImage = new Image("ship.png",50,50,true,true);
         ShipImageView = new ImageView(ShipImage);
@@ -54,6 +57,8 @@ public class OceanExplorer extends Application {
         root.getChildren().add(ShipImageView);
 
     }
+    
+//     method startsailing how to move over the coordinates 
     private void startSailing() {	
         scene.setOnKeyPressed(new EventHandler<KeyEvent>(){
 
